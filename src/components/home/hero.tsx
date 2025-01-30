@@ -1,6 +1,6 @@
 'use client'; 
 import Image from 'next/image'; // Импортируем Image компонент для Next.js
-import Link from 'next/link'; // Для создания ссылок внутри Next.js
+
 
 const Hero = () => {
   return (
