@@ -17,10 +17,13 @@ export default function RootLayout({
 
   return (
     <html lang={i18n.language} suppressHydrationWarning>
-      <body className="">
+      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      </head>
+      <body className="bg-[#050119] w-full max-[400px]:w-[122%]">
         <ThemeProvider attribute="class" defaultTheme="dark">
           <Navbar />
-          <main className=" bg-[#050119]">{children}</main>
+          <main className=" w-full">{children}</main>
           <Footer />
         </ThemeProvider>
       </body>
